@@ -15,6 +15,7 @@ import com.amido.secureia.service.EmailService;
 @Name(value="userValidationPolicy")
 @Scope(ScopeType.APPLICATION)
 @AutoCreate
+@ApplicationScoped
 public class UserValidationPolicy extends BaseAuthenticationPolicy {
 	
 	private final String CODE_NOT_SENT_MSG = "Security code could not be sent. Please contact your administrator.";
