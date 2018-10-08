@@ -16,6 +16,7 @@ import com.amido.secureia.common.SessionUtils;
 @Name(value = "multiStepAuthenticationHandler")
 @Scope(ScopeType.APPLICATION)
 @AutoCreate
+@ApplicationScoped
 public class MultiStepAuthenticationHandler {
 
     private static final Logger LOG = LoggerFactory.getLogger(MultiStepAuthenticationHandler.class);
