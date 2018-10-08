@@ -16,6 +16,7 @@ import com.amido.secureia.service.EmailService;
 @Name(value="resetPasswordPolicy")
 @Scope(ScopeType.APPLICATION)
 @AutoCreate
+@ApplicationScoped
 public class ResetPasswordPolicy extends BaseAuthenticationPolicy {
     
     public static final String CONTAINS_LETTER = ".*[a-zA-Z]+.*";
