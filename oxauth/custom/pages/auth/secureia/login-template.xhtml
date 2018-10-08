@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:s="http://jboss.org/schema/seam/taglib">
+<f:view transient="true">
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title><ui:insert name="pageTitle"/></title>
+       <link type="text/css" rel="stylesheet" href="#{oxAuthConfigurationService.getCssLocation()}/bootstrap.css" />
+       <link type="text/css" rel="stylesheet" href="#{oxAuthConfigurationService.getCssLocation()}/bootstrap-responsive.css" />
+       <link type="text/css" rel="stylesheet" href="#{oxAuthConfigurationService.getCssLocation()}/style.css" />
+        <ui:insert name="head"/>
+    </h:head>
+    <h:body>
+    <div class="body">
+        <ui:insert name="body"/>
+    </div>
+    
+    <s:fragment>
+        <div style="font-size: 11px; text-align: center;">
+            <p>
+                <h:outputText value="If you encounter any issues, please contact the ResilienceDirect Support Desk via " />
+                <a href="mailto:support@resilience.gov.uk">support@resilience.gov.uk</a>
+            </p>
+        </div>
+    </s:fragment>
+    
+    </h:body>
+</f:view>
+</html>
