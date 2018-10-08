@@ -11,6 +11,7 @@ import org.xdi.oxauth.model.common.User;
 @Name(value="codeValidationPolicy")
 @Scope(ScopeType.APPLICATION)
 @AutoCreate
+@ApplicationScoped
 public class CodeValidationPolicy extends BaseAuthenticationPolicy {
 	
 	private final String CODE_MISMATCH_MSG = "Security code does not match.";
