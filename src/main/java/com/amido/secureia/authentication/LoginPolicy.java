@@ -14,6 +14,7 @@ import com.amido.secureia.common.PersonAuth;
 @Name(value="loginPolicy")
 @Scope(ScopeType.APPLICATION)
 @AutoCreate
+@ApplicationScoped
 public class LoginPolicy extends BaseAuthenticationPolicy {
 	
 	private final String LOCKED_MSG = "Your account has been locked. Please contact your administrator.";
